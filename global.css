@@ -305,6 +305,10 @@
         @apply border-destructive;
     }
 
+    .auth-success {
+        @apply rounded-2xl border border-success/20 bg-success/10 px-4 py-3 text-sm font-sans-semibold text-success;
+    }
+
     .auth-error {
         @apply text-xs font-sans-medium text-destructive;
     }
@@ -331,6 +335,34 @@
 
     .auth-secondary-button-text {
         @apply text-sm font-sans-semibold text-accent;
+    }
+
+    .auth-quiet-button {
+        @apply items-center py-2;
+    }
+
+    .auth-quiet-button-text {
+        @apply text-sm font-sans-semibold text-muted-foreground;
+    }
+
+    .auth-trust-row {
+        @apply flex-row flex-wrap items-center justify-center gap-2 pt-1;
+    }
+
+    .auth-trust-copy {
+        @apply text-xs font-sans-semibold text-muted-foreground;
+    }
+
+    .auth-trust-dot {
+        @apply text-xs font-sans-bold text-accent;
+    }
+
+    .auth-strength-track {
+        @apply h-1.5 overflow-hidden rounded-full bg-muted;
+    }
+
+    .auth-strength-fill {
+        @apply h-full rounded-full bg-accent;
     }
 
     .auth-divider-row {
