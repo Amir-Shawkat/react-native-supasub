@@ -1,0 +1,16 @@
+Error while reading cache, falling back to a full crawl:
+ Error: Unable to deserialize cloned data.
+    at deserialize (node:v8:469:14)
+    at DiskCacheManager.read (D:\React-Native-Projects\subscription-guide\node_modules\expo\node_modules\metro-file-map\src\cache\DiskCacheManager.js:60:33)
+    at FileMap.read (D:\React-Native-Projects\subscription-guide\node_modules\expo\node_modules\metro-file-map\src\index.js:284:14)
+    at D:\React-Native-Projects\subscription-guide\node_modules\expo\node_modules\metro-file-map\src\index.js:202:25
+    at DependencyGraph.ready (D:\React-Native-Projects\subscription-guide\node_modules\expo\node_modules\metro\src\node-haste\DependencyGraph.js:88:5)
+    at Bundler.ready (D:\React-Native-Projects\subscription-guide\node_modules\expo\node_modules\metro\src\Bundler.js:62:5)
+    at IncrementalBundler.ready (D:\React-Native-Projects\subscription-guide\node_modules\expo\node_modules\metro\src\IncrementalBundler.js:302:5)
+    at Server.ready (D:\React-Native-Projects\subscription-guide\node_modules\expo\node_modules\metro\src\Server.js:1305:5)
+The following packages should be updated for best compatibility with the installed expo version:
+  expo@54.0.33 - expected version: ~54.0.34
+  expo-linking@8.0.11 - expected version: ~8.0.12
+  expo-secure-store@13.0.2 - expected version: ~15.0.8
+  expo-web-browser@15.0.10 - expected version: ~15.0.11
+Your project may not work correctly until you install the expected versions of the packages.

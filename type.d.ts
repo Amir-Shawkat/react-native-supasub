@@ -1,4 +1,8 @@
+import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
+import type { ComponentProps } from "react";
 import type { ImageSourcePropType } from "react-native";
+
+type MaterialCommunityIconName = ComponentProps<typeof MaterialCommunityIcons>["name"];
 
 declare global {
     interface AppTab {
@@ -27,6 +31,7 @@ declare global {
         frequency?: string;
         renewalDate?: string;
         color?: string;
+        iconName?: MaterialCommunityIconName;
     }
 
     interface SubscriptionCardProps extends Omit<Subscription, "id"> {
